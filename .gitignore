@@ -1,0 +1,23 @@
+# Build / publish
+bin/
+obj/
+publish/
+*.user
+*.suo
+.vs/
+
+# .NET
+*.dll
+*.exe
+*.pdb
+*.cache
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# WebView2 运行时缓存（勿提交）
+**/DesignKitRecolorCopy.exe.WebView2/
+
+# IDE
+.idea/
+*.iml

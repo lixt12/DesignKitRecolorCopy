@@ -1,0 +1,5 @@
+D:\IdeaProjects\12\DesignKitRecolorCopy\publish\DesignKitRecolorCopy.pdb
+D:\IdeaProjects\12\DesignKitRecolorCopy\publish\Microsoft.Web.WebView2.Core.xml
+D:\IdeaProjects\12\DesignKitRecolorCopy\publish\Microsoft.Web.WebView2.Wpf.xml
+D:\IdeaProjects\12\DesignKitRecolorCopy\publish\Microsoft.Web.WebView2.WinForms.xml
+D:\IdeaProjects\12\DesignKitRecolorCopy\publish\DesignKitRecolorCopy.exe
