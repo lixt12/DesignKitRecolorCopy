@@ -46,9 +46,15 @@ dotnet publish DesignKitRecolorCopy.csproj -c Release -r win-x64 --self-containe
 
 发布后运行：`publish\DesignKitRecolorCopy.exe`。
 
+### 版本管理（Git）
+
+- 项目已配置 `.gitignore`，**不要提交** `publish/`、`bin/`、`obj/`、`.vs/` 等构建与发布产物。
+- 单文件 exe 约 60～155MB，**超过 GitHub 单文件 100MB 限制**，无法直接推送到仓库。
+- 若使用 GitHub：在仓库中创建 **Releases**，在 Release 里**上传** `DesignKitRecolorCopy.exe` 作为附件即可分发给用户（Release 附件单文件限制约 2GB）。
+
 ### 分发给用户
 
-- **若用上面的「单文件 EXE」发布**：只需把 `publish` 里的 **一个** `DesignKitRecolorCopy.exe` 发给用户（或打成 zip），用户放到任意目录双击即可，无需再带一堆 DLL、也无需安装 .NET。
+- **若用上面的「单文件 EXE」发布**：只需把 `publish` 里的 **一个** `DesignKitRecolorCopy.exe` 发给用户（或打成 zip），用户放到任意目录双击即可，无需再带一堆 DLL、也无需安装 .NET。若项目在 GitHub，可通过 **Releases** 上传 exe 供用户下载（见上文「版本管理」）。
 - **若用「多文件」发布**：必须把整个 **`publish` 文件夹** 打包发给用户，让用户在该文件夹内双击 exe；且用户需已安装 [.NET 8 桌面运行时](https://dotnet.microsoft.com/download/dotnet/8.0)。
 - **无论哪种方式**：用户电脑都需要 **WebView2 运行时**（多数 Windows 11 已自带）。
 - **若用户双击无反应**：让用户在该目录打开 CMD 执行 `DesignKitRecolorCopy.exe` 看报错，或检查是否缺 WebView2。
